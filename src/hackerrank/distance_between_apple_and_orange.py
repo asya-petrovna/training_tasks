@@ -1,6 +1,6 @@
 def count_apples_and_oranges(s, t, a, b, apples, oranges):
-    apple_in_home, orange_in_home = [0, 0]
-    home = list(range(s, t+1))
+    apple_in_home, orange_in_home = 0, 0
+    home = range(s, t+1)
     new_apples = [apples[i] + a for i in range(len(apples))]
     new_oranges = [oranges[k] + b for k in range(len(oranges))]
     for i in range(len(new_apples)):
