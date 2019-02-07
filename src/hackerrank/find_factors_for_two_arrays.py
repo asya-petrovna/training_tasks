@@ -1,7 +1,7 @@
 def filter_factorizing(numbers_to_filter, check_numbers):
     result = []
     for candidate in numbers_to_filter:
-        if all([max(candidate, jury) % min(candidate, jury) == 0 for jury in check_numbers]):
+        if all(max(candidate, jury) % min(candidate, jury) == 0 for jury in check_numbers):
             result.append(candidate)
     return result
 
